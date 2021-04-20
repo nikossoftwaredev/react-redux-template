@@ -1,15 +1,14 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
-import TestApi from "./features/counter/TestApi";
+import Todos from "./components/Todos";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TestApi />
+        <Todos />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -54,6 +53,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
